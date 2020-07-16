@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ASSIGNMENT 1 DAY 3</title>
+</head>
+<h1>ASSIGNMENT 1 DAY 3</h1>
+
+<body>
+  <p>1)&nbspTake a number from a user and write a function which checks whether the number is even or
+    odd.<br> Assign the result to a variable and log that variable in the console.<br><br>
+    Example Input: 23<br>
+    Output: The number entered is 23 and Number is odd</p>
+  <script>
+    const number = prompt("ENTER THE NUMBER");
+    isOddOrEven(number);
+    function isOddOrEven(number) {
+      if (number % 2 == 0) {
+        console.log(`The number entered is ${number} and Number is Even`);
+      }
+      else {
+        console.log(`The number entered is ${number} and Number is Odd`);
+      }
+    }
+  </script>
+</body>
+
+</html>
