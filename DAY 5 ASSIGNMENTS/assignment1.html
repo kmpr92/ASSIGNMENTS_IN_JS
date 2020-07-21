@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT 1 DAY 5</title>
+</head>
+
+<body>
+    <h2>ASSIGNMENT 1 DAY 5</h2>
+    <script>
+        let array = [];
+        let range = prompt("Enter the range");
+        let i = 0;
+        while (i < range) {
+            let number = prompt("Enterthe number");
+            if (number < 0) {
+                continue; 5
+            }
+            else {
+                array.push(number);
+                i++;
+            }
+        }
+        console.log(array);
+        let filteredArray = array.filter((elements) => elements % 2 !== 0).map((elements) => elements ** 3);
+        console.log(filteredArray);
+    </script>
+
+</body>
+
+</html>
