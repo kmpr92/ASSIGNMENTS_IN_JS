@@ -53,12 +53,14 @@
             addCourse = function (accountHolder, course) {
                 accountHolder.courses.push(course);
                 console.log(`${accountHolder.name} has enrolled [${accountHolder.courses}] courses`);
+                return this;
             }
             removeCourse = function (accountHolder, course) {
                 accountHolder.courses = accountHolder.courses.filter(function (item) {
                     return item !== course;
                 });
                 console.log(`${accountHolder.name} has ${accountHolder.courses} course to complete`);
+                return this;
             }
         }
 
