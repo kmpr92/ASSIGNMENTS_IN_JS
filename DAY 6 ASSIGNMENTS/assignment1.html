@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT 1 DAY 6</title>
+</head>
+
+<body onload="changeColor()">
+    <div>
+        <h2 style="text-align: center;background-color:yellowgreen;">ASSIGNMENT 1 DAY 6</h2>
+        <img src="https://wallpapercave.com/wp/wp1859029.jpg"  alt="MSD" width= "100%">
+    </div>
+    <script>
+        
+        let array = ["silver", "slateblue", "tomato", "thistle", "burlywood"];
+        let currentColor = 0;
+        let currentPhoto = 0;
+        function changeColor() {
+            document.bgColor = array[currentColor];
+            currentColor = (currentColor + 1) % array.length;
+            setTimeout(changeColor, 5000)
+        }
+        
+
+    </script>
+
+</body>
+
+</html>
